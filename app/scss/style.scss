@@ -27,6 +27,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    transition: all .3s;
+    &:hover{
+        color: #FF7A00;
+    }
 }
 .header__top-call{
     margin-left: 320px;
@@ -37,10 +41,17 @@
 .header__call-phone{
     display: block;
     margin-bottom: 6px;
+    transition: all .3s;
+    &:hover{
+        color: #FF7A00;
+    }
 }
 .header__call-text{
     display: block;
-    color: #FF7A00;
+    transition: all .3s;
+    &:hover{
+        color: #FF7A00;
+    }
 }
 .header__content{
     padding: 44px 0 68px;
@@ -53,7 +64,7 @@
     font-weight: bold;
     font-size: 60px;
     line-height: 70px;
-    max-width: 531px;
+    max-width: 546px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 73px;    
 }
@@ -68,8 +79,50 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    padding: 14px 36px 21px 34px;
+    padding: 15px 34px;
     background:#1C1D1E;
     border: 3px solid #FF7A00;
     border-radius: 10px;
+    transition: all .5s;
+    &:hover{
+        background: #0A0A0A;
+    }
+}
+.header__content-right{
+    width: 50%;
+}
+.header__content-right{
+    position: relative;
+}
+.header__right-slider{
+    z-index: 1;
+}
+.header__right-slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    button{
+        font-size: 0px;
+        border: none;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+        background: #fff;
+        cursor: pointer;
+    }
+.slick-active{
+    button{
+        background: #FF7A00;
+    }
+}
+}
+.header__slider-item-img{
+    max-width: 100%;
+    height: auto;
+}
+.header__right-img{
+    position: absolute;
+    top: -24px;
+    right: -80px;
 }
