@@ -13,6 +13,7 @@
 }
 .logo{
     margin-right: 45px;
+    flex: 0 0 186px;
 }
 .header__menu-list{
     display: flex;
@@ -83,9 +84,11 @@
     background:#1C1D1E;
     border: 3px solid #FF7A00;
     border-radius: 10px;
-    transition: all .5s;
+    transition: all .8s;
+    box-shadow: 0 15px 0px #000;
     &:hover{
         background: #0A0A0A;
+        box-shadow: 0 3px 0px #000;
     }
 }
 .header__content-right{
@@ -169,26 +172,80 @@
 .work__list{
     display: flex;
     flex-wrap: wrap;
-    max-width: 990px;
+    justify-content: center;
     margin: 45px auto 0;
+    counter-reset: list;
+}
+.work__list-item{
+    flex: 0 1 50%;
+    margin-bottom: 40px;
+    max-width: 450px;
+    display: flex;
     align-items: center;
 }
-.work__item{
-    max-width: 400px;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
+.work__list-item:nth-child(2n-1){
+    margin-right: 120px;
 }
-.work__item:nth-child(1),
-.work__item:nth-child(2){
-    margin-bottom: 55px;
+.work__list-item:last-child{
+    margin: 0;
 }
-.work__item:last-child{
-    margin-top: 38px;
-}
-.item__number{
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 73px;
+.work__list-item::before {
+    content: counter(list, decimal-leading-zero);
+    counter-increment: list;
+    margin-right: 25px;
     color: rgba(255, 122, 0, 0.5);
+    font-size: 60px;
+  }
+
+  .services{
+      padding: 72px 0 43px;
+      background: #0A0A0A;
+  }
+  .services__inner{
+      margin-top: 64px;
+  }
+  .services__tabs{
+      display: flex;
+      max-width: 996px;
+      margin: 0 auto;
+  }
+  .tabs__items{
+      margin-right: 20px;
+      flex: 0 1 39%;
+  }
+  .tabs__item{
+      height: 177px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0A0A0A;
+      margin-bottom: 16px;
+      padding: 0 115px;
+  }
+.tabs__block{
+    background-image: url(../images/tabs-ecran.jpg);
+    background-repeat: no-repeat;
+    max-width: 590px;
+    min-height: 760px;
+    color: #0A0A0A;
+    display: none;
+}
+.tabs__block:target{
+    display: block;
+}
+.tabs__block-title{
+    text-align: center;
+    padding-top: 43px;
+    margin-bottom: 43px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F17D11;
+}
+.tabs__block-list{
+    padding: 0 33px 96px 103px;
+}
+.tabs__list-item{
+    margin-bottom: 15px;
 }
