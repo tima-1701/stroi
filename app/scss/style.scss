@@ -153,15 +153,6 @@
         top: 30px;
         right: 0;
     }
-    &::after{
-        content: '';
-        width: 203px;
-        height: 3px;
-        background: #FF7A00;
-        position: absolute;
-        top: 30px;
-        right: 0;
-    }
     &::before{
         content: '';
         width: 203px;
@@ -244,7 +235,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 2px solid #F17D11;
       font-size: 22px;
       line-height: 27px;
       cursor: pointer;
@@ -256,6 +246,10 @@
     width: 595px;
     height: 750px;
     border: 2px solid #F17D11;
+    display: none;
+}
+.tabs__block.active{
+    display: block;
 }
 .tabs__block-title{
     text-align: center;
@@ -366,6 +360,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    margin-bottom: 83px;
 }
 .info__inner{
     display: flex;
@@ -374,6 +369,7 @@
 .info__content{
     width: 490px;
 }
+
 .info__title{
     font-size: 70px;
     line-height: 85px;
@@ -382,6 +378,7 @@
     font-weight: 400;
     margin-bottom: 48px;
 }
+
 .info__item{
     font-weight: 500;
     font-size: 20px;
@@ -410,4 +407,54 @@
     font-size: 100px;
     line-height: 122px;
     color: #FF7A00;
+}
+.gallery{
+    margin-bottom: 118px;
+}
+.gallery__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: 56px;
+}
+.gallery__link{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.gallery__title{
+    margin-bottom: 93px;
+    position: relative;
+    &::after{
+        content: '';
+        width: 203px;
+        height: 3px;
+        background: #FF7A00;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    &::before{
+        content: '';
+        width: 203px;
+        height: 3px;
+        background: #FF7A00;
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+}
+.gallery__img{
+    border: 2px solid #FF7D05;
+    border-radius: 10px;
+    max-width: 350px;
+}
+.tabs__content {
+    display: none;
+  }
+  .tabs__content.active {
+    display: block;
+  }
+.price__title{
+    margin-bottom: 69px;
 }

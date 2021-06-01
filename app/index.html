@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Safehouse</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="carousel/slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="carousel/slick/slick.css" />
+  <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -37,27 +39,27 @@
             и ремонт в Гомеле
           </h1>
           <p class="header__left-text">
-            Надежное будущее строим 
-            вместе  
+            Надежное будущее строим
+            вместе
           </p>
           <a class="header__left-btn btn" href="#">Получить консультацию </a>
         </div>
         <div class="header__content-right">
           <div class="header__right-slider">
             <div class="header__slider-item">
-            <img class="header__slider-item-img" src="images/slider/slider-item.jpg" alt="slider-img">
+              <img class="header__slider-item-img" src="images/slider/slider-item.jpg" alt="slider-img">
             </div>
             <div class="header__slider-item">
-            <img class="header__slider-item-img" src="images/slider/slider-item1.jpg" alt="slider-img">
+              <img class="header__slider-item-img" src="images/slider/slider-item1.jpg" alt="slider-img">
             </div>
             <div class="header__slider-item">
-            <img class="header__slider-item-img" src="images/slider/slider-item2.jpg" alt="slider-img">
+              <img class="header__slider-item-img" src="images/slider/slider-item2.jpg" alt="slider-img">
             </div>
             <div class="header__slider-item">
-            <img class="header__slider-item-img" src="images/slider/slider-item3.jpg" alt="slider-img">
+              <img class="header__slider-item-img" src="images/slider/slider-item3.jpg" alt="slider-img">
             </div>
             <div class="header__slider-item">
-            <img class="header__slider-item-img" src="images/slider/slider-item4.jpg" alt="slider-img">
+              <img class="header__slider-item-img" src="images/slider/slider-item4.jpg" alt="slider-img">
             </div>
           </div>
           <img class="header__right-img" src="images/border.png" alt="border">
@@ -65,174 +67,232 @@
       </div>
     </div>
   </header>
-    <main class="main">
-      <section class="work">
-        <div class="container">
-          <h2 class="work__title title">КАК МЫ РАБОТАЕМ</h2>
-          <ol class="work__list">
-              <li class="work__list-item">Бесплатный выезд мастера на объект для оценки работы </li>
-              <li class="work__list-item">Оформление и подписание договора</li>
-              <li class="work__list-item">Обсуждение работы с заказчиком </li>
-              <li class="work__list-item">Выполнение работ в соответствии с пожеланиями заказчика</li>
-              <li class="work__list-item">Прием работы заказчиком  и окончательный расчет</li>
-          </ol>
-          </div>
-        </div>
-      </section>
+  <main class="main">
+    <section class="work">
+      <div class="container">
+        <h2 class="work__title title">КАК МЫ РАБОТАЕМ</h2>
+        <ol class="work__list">
+          <li class="work__list-item">Бесплатный выезд мастера на объект для оценки работы </li>
+          <li class="work__list-item">Оформление и подписание договора</li>
+          <li class="work__list-item">Обсуждение работы с заказчиком </li>
+          <li class="work__list-item">Выполнение работ в соответствии с пожеланиями заказчика</li>
+          <li class="work__list-item">Прием работы заказчиком и окончательный расчет</li>
+        </ol>
+      </div>
+      </div>
+    </section>
 
-      <section class="services">
-        <div class="container">
-          <h2 class="services__title title">НАШИ УСЛУГИ</h2>
-          <div class="services__inner">
-            <div class="services__tabs">
-              <nav class="tabs__items">
-                <div class="tabs__item-wrap">
-                <div class="tabs__item"style="background-image: url(../images/tabs-img.jfif);">Отделочные
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title title">НАШИ УСЛУГИ</h2>
+        <div class="services__inner">
+          <div class="services__tabs">
+            <nav class="tabs__items">
+              <div class="tabs__item-wrap">
+                <div class="tabs__item" style="background-image: url(../images/tabs-img.jpg);" >Отделочные
                   работы</div>
-                </div>
-                <div class="tabs__item-wrap">
-                <div class="tabs__item"style="background-image: url(../images/tabs-img1.jfif);">Строительство       
+              </div>
+              <div class="tabs__item-wrap">
+                <div class="tabs__item" style="background-image: url(../images/tabs-img1.jpg);" data-tab="#tab_2">Строительство
                   домов</div>
-                </div>
-                  <div class="tabs__item-wrap">
-                <div class="tabs__item"style="background-image: url(../images/tabs-img2.jfif);">Электрика
+              </div>
+              <div class="tabs__item-wrap">
+                <div class="tabs__item" style="background-image: url(../images/tabs-img.jpg);" data-tab="#tab_3">Электрика
                 </div>
               </div>
-                <div class="tabs__item-wrap">
-                <div class="tabs__item"style="background-image: url(../images/tabs-img2.jfif);">Сантехника
+              <div class="tabs__item-wrap">
+                <div class="tabs__item" style="background-image: url(../images/tabs-img1.jpg);" data-tab="#tab_4">Сантехника
                 </div>
+              </div>
+            </nav>
+            <div class="tabs__body">
+              <div class="tabs__block" id="tab_1">
+                <p class="tabs__block-title">
+                  Отделочные работы
+                </p>
+                <div class="tabs__block-list">
+                  <li class="tabs__list-item">Электромонтажные и сантехн ические работы</li>
+                  <li class="tabs__list-item">Демонтажные работы</li>
+                  <li class="tabs__list-item">Штукатурные работы </li>
+                  <li class="tabs__list-item">Малярные работы</li>
+                  <li class="tabs__list-item">Монтаж ГКЛ</li>
+                  <li class="tabs__list-item">Облицовка стен и потолков</li>
+                  <li class="tabs__list-item">Укладка плитки</li>
+                  <li class="tabs__list-item">Укладка всех видов наполных покрытий</li>
                 </div>
-              </nav>
-              <div class="tabs__body">
-                  <div class="tabs__block">
-                    <p class="tabs__block-title">
-                      Отделочные работы
-                    </p>
-                    <div class="tabs__block-list">
-                      <li class="tabs__list-item">Электромонтажные и сантехн ические работы</li>
-                      <li class="tabs__list-item">Демонтажные работы</li>
-                      <li class="tabs__list-item">Штукатурные работы </li>
-                      <li class="tabs__list-item">Малярные работы</li>
-                      <li class="tabs__list-item">Монтаж ГКЛ</li>
-                      <li class="tabs__list-item">Облицовка стен и потолков</li>
-                      <li class="tabs__list-item">Укладка плитки</li>
-                      <li class="tabs__list-item">Укладка всех видов наполных покрытий</li>
-                    </div>
-                  </div>
-                  <div class="tabs__block">
-                    <p class="tabs__block-title">
-                      Строительство       
-                    домов
-                    </p>
-                    <div class="tabs__block-list">
-                      <li class="tabs__list-item">Профессиональная укладка блоков ПГС</li>
-                      <li class="tabs__list-item">Укладка кирпича</li>
-                      <li class="tabs__list-item">Укладка пазогребневых плит</li>
-                      <li class="tabs__list-item">Монтаж плит</li>
-                      <li class="tabs__list-item">Монтаж перекрытий</li>
-                      <li class="tabs__list-item">монтаж балок и пермычек</li>
-                      <li class="tabs__list-item">Изготовление монолитного пола</li>
-                      <li class="tabs__list-item">Установка перегородок</li>
-                      <li class="tabs__list-item">Установка вентиляционных каналов</li>
-                      <li class="tabs__list-item">Кровельные работы любой сложности</li>
-                    </div>
-                  </div>
-                  <div class="tabs__block">
-                    <p class="tabs__block-title">
-                      Электрика
-                    </p>
-                    <div class="tabs__block-list">
-                      <li class="tabs__list-item">Замена розеток и выключателей</li>
-                      <li class="tabs__list-item">Перенос розеток и выключателей</li>
-                      <li class="tabs__list-item">Замена электропроводки</li>
-                      <li class="tabs__list-item">Сборка электросчетчиков</li>
-                      <li class="tabs__list-item">Установка электросчетчиков</li>
-                    </div>
-                  </div>
-                  <div class="tabs__block">
-                    <p class="tabs__block-title">
-                      Сантехника
-                    </p>
-                    <div class="tabs__block-list">
-                      <li class="tabs__list-item">Замена труб в ванной и туалете</li>
-                      <li class="tabs__list-item">Замена труб в ванной</li>
-                      <li class="tabs__list-item">Замена труб на пластиковые
-                      </li>
-                      <li class="tabs__list-item">Монтаж трубопроводов ПВХ
-                      </li>
-                      <li class="tabs__list-item">Замена ст Демонтаж радиатора отопления
-                      </li>
-                      <li class="tabs__list-item">Перенос и установка счетчиков</li>
-                      <li class="tabs__list-item">Монтаж и ремонт водопровода</li>
-                      <li class="tabs__list-item">Монтаж отопления</li>
-                      <li class="tabs__list-item">Монтаж канализации</li>
-                      <li class="tabs__list-item">Замена и перенос  полотенцесушителя
-                      </li>
-                      <li class="tabs__list-item">Установка кранов на полотенцесушитель
-                      </li>
-                      <li class="tabs__list-item">Установка инсталляций</li>
-                      <li class="tabs__list-item">Установка всех видов сантехнического оборудования</li>
-                      <li class="tabs__list-item">Замена батарей отопления</li>
-                    </div>
-                  </div>
+              </div>
+              <div class="tabs__block" id="tab_2">
+                <p class="tabs__block-title">
+                  Строительство
+                  домов
+                </p>
+                <div class="tabs__block-list">
+                  <li class="tabs__list-item">Профессиональная укладка блоков ПГС</li>
+                  <li class="tabs__list-item">Укладка кирпича</li>
+                  <li class="tabs__list-item">Укладка пазогребневых плит</li>
+                  <li class="tabs__list-item">Монтаж плит</li>
+                  <li class="tabs__list-item">Монтаж перекрытий</li>
+                  <li class="tabs__list-item">монтаж балок и пермычек</li>
+                  <li class="tabs__list-item">Изготовление монолитного пола</li>
+                  <li class="tabs__list-item">Установка перегородок</li>
+                  <li class="tabs__list-item">Установка вентиляционных каналов</li>
+                  <li class="tabs__list-item">Кровельные работы любой сложности</li>
+                </div>
+              </div>
+              <div class="tabs__block" id="tab_3">
+                <p class="tabs__block-title">
+                  Электрика
+                </p>
+                <div class="tabs__block-list">
+                  <li class="tabs__list-item">Замена розеток и выключателей</li>
+                  <li class="tabs__list-item">Перенос розеток и выключателей</li>
+                  <li class="tabs__list-item">Замена электропроводки</li>
+                  <li class="tabs__list-item">Сборка электросчетчиков</li>
+                  <li class="tabs__list-item">Установка электросчетчиков</li>
+                </div>
+              </div>
+              <div class="tabs__block" id="tab_4">
+                <p class="tabs__block-title">
+                  Сантехника
+                </p>
+                <div class="tabs__block-list">
+                  <li class="tabs__list-item">Замена труб в ванной и туалете</li>
+                  <li class="tabs__list-item">Замена труб в ванной</li>
+                  <li class="tabs__list-item">Замена труб на пластиковые
+                  </li>
+                  <li class="tabs__list-item">Монтаж трубопроводов ПВХ
+                  </li>
+                  <li class="tabs__list-item">Замена ст Демонтаж радиатора отопления
+                  </li>
+                  <li class="tabs__list-item">Перенос и установка счетчиков</li>
+                  <li class="tabs__list-item">Монтаж и ремонт водопровода</li>
+                  <li class="tabs__list-item">Монтаж отопления</li>
+                  <li class="tabs__list-item">Монтаж канализации</li>
+                  <li class="tabs__list-item">Замена и перенос полотенцесушителя
+                  </li>
+                  <li class="tabs__list-item">Установка кранов на полотенцесушитель
+                  </li>
+                  <li class="tabs__list-item">Установка инсталляций</li>
+                  <li class="tabs__list-item">Установка всех видов сантехнического оборудования</li>
+                  <li class="tabs__list-item">Замена батарей отопления</li>
+                </div>
               </div>
             </div>
           </div>
-          <p class="services__text">
-            Для многих ремонт — это что-то вроде стихийного бедствия, но чем тщательнее вы его спланируете, тем проще будет его пережить. А уютная, привлекательная и чистая квартира – это мечта любого человека. 
-          </p>
-          <h2 class="services__subtitle">Давайте воплотим Ваши мечты  в реальность!</h2>
         </div>
-      </section>
-      <section class="request">
-        <div class="container">
-          <div class="request__inner">
-            <div class="form__wrapper">
+        <p class="services__text">
+          Для многих ремонт — это что-то вроде стихийного бедствия, но чем тщательнее вы его спланируете, тем проще
+          будет его пережить. А уютная, привлекательная и чистая квартира – это мечта любого человека.
+        </p>
+        <h2 class="services__subtitle">Давайте воплотим Ваши мечты в реальность!</h2>
+      </div>
+    </section>
+    <section class="request">
+      <div class="container">
+        <div class="request__inner">
+          <div class="form__wrapper">
             <form class="form">
               <div class="form__title">ЗАПОЛНИТЕ ФОРМУ</div>
               <input class="form__input" type="text" placeholder="Ваше имя">
               <input class="form__input" type="text" placeholder="Номер телефона">
-              <p class="form__text">Опишите Вашу  заявку</p>
+              <p class="form__text">Опишите Вашу заявку</p>
               <textarea class="form__textarea" name="" id="" cols="30" rows="10"></textarea>
               <button class="form-btn btn">Получить консультацию</button>
-              <label class="form__checkbox-wrap"><input class="form__checkbox" type="checkbox">Принимаю условия Политики конфединциальности</label>
+              <label class="form__checkbox-wrap"><input class="form__checkbox" type="checkbox">Принимаю условия Политики
+                конфединциальности</label>
             </form>
           </div>
           <div class="request__img-wrap">
-          <img class="request__img" src="images/request.png" alt="заявка">
-        </div>
+            <img class="request__img" src="images/request.png" alt="заявка">
           </div>
         </div>
-      </section>
-      <section class="info">
-        <div class="container">
-          <div class="info__inner">
-            <div class="info__content">
-              <h2 class="info__title">О НАС</h2>
-              <ul class="info__list">
-                <li class="info__item">Качественное проведение работ</li>
-                <li class="info__item">Обсуждение работы на каждом этапе</li>
-                <li class="info__item">Профессиональный инструмент</li>
-                <li class="info__item">Начинаем работу без аванса</li>
-                <li class="info__item">Доступные цены</li>
-              </ul>
-            </div>
-            <div class="counter">
-              <div class="counter__inner">
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__inner">
+          <div class="info__content">
+            <h2 class="info__title">О НАС</h2>
+            <ul class="info__list">
+              <li class="info__item">Качественное проведение работ</li>
+              <li class="info__item">Обсуждение работы на каждом этапе</li>
+              <li class="info__item">Профессиональный инструмент</li>
+              <li class="info__item">Начинаем работу без аванса</li>
+              <li class="info__item">Доступные цены</li>
+            </ul>
+          </div>
+          <div class="counter">
+            <div class="counter__inner">
               <p class="counter__text">более</p>
               <div class="counter__numb">15</div>
               <p class="counter__text">лет успешной работы</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__title title">ГАЛЕРЕЯ РАБОТ</div>
+        <div class="gallery__wrap">
+          <a class="gallery__link" data-fancybox="gallery" href="images/galer/gal/gal-item-item.jpg">
+            <img class="gallery__img" src="images/galer/gal-item.jpg">
+          </a>
+          <a class="gallery__link" data-fancybox="gallery" href="images/galer/gal/gal-item-item1.jpg">
+            <img class="gallery__img" src="images/galer/gal-item1.jpg">
+          </a>
+          <a class="gallery__link" data-fancybox="gallery" href="images/galer/gal/gal-item-item2.jpg">
+            <img class="gallery__img" src="images/galer/gal-item2.jpg">
+          </a>
+          <a class="gallery__link" data-fancybox="gallery" href="images/galer/gal/gal-item-item3.jpg">
+            <img class="gallery__img" src="images/galer/gal-item3.jpg">
+          </a>
+          <a class="gallery__link" data-fancybox="gallery" href="images/galer/gal/gal-item-item4.jpg">
+            <img class="gallery__img" src="images/galer/gal-item4.jpg">
+          </a>
+          <a class="gallery__link" data-fancybox="gallery" href="images/galer/gal/gal-item-item5.jpg">
+            <img class="gallery__img" src="images/galer/gal-item5.jpg">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <h2 class="price__title title">
+          ПРАЙС-ЛИСТ НА УСЛУГИ
+        </h2>
+        <div class="price__tabs">
+          <ul class="tabs__caption">
+            <li class="caption__item active">Отделка</li>
+            <li class="caption__item">Строительство</li>
+            <li class="caption__item">Кровля</li>
+            <li class="caption__item">Сантехника</li>
+            <li class="caption__item">Электрика</li>
+          </ul>
+          <div class="tabs__content active">
+            наименование работ
+          </div>
+          <div class="tabs__content">
+            наименование работ
+            sa
+          </div>
+          <div class="tabs__content">
+            наименование работ
+            as
+          </div>
+          <div class="tabs__content">
+            наименование работ
+            asa
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer"></footer>
-
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
 
 
   <script src="js/main.min.js"></script>
+  <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="carousel/slick/slick.min.js"></script>
